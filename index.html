@@ -1,15 +1,403 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Antoine Cailly</title>
+        <style type="text/css">
+            body{
+                margin:40px auto;
+                max-width:650px;
+                line-height:1.6;
+                font-size:18px;
+                color:#444;
+                padding:0 10px
+            }
+            h1,h2,h3{
+                line-height:1.2
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Antoine Cailly</h1>
+            <img width="200" src="https://user-images.githubusercontent.com/16269660/45411675-18e6ae00-b675-11e8-99d6-3badaf9cad98.png">
+        </header>
 
-<head>
-    <meta charset="utf-8" />
-    <title>[header.title]</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-</head>
-
-<body>
-</body>
-
+        <section>
+            <header>
+                <h2>About Me</h2>
+            </header>
+            <p>Developer at Zenika Rennes, curious about alternative ways of building stuff and working together</p>
+            <p>Github: <a target="_blank" href="https://github.com/acailly">acailly</a></p>
+            <p>Twitter: <a target="_blank" href="https://twitter.com/AntoineCailly">@AntoineCailly</a></p>
+            <p>Scuttlebutt: 
+                <a target="_blank" href="https://viewer.scuttlebot.io/@UP7zpmox0RbLL1wMZO0xtYbpwmc/AQtmiX5zbDLh0P8=.ed25519">
+                    @UP7zpmox0RbLL1wMZO0xtYbpwmc/AQtmiX5zbDLh0P8=.ed25519
+                </a>
+            </p>
+            <p>SpeakerDeck: <a target="_blank" href="https://speakerdeck.com/acailly">acailly</a></p>
+        </section>
+        <section>
+            <h2>Talks</h2>
+            <article>
+                <header>
+                    <h3>Le Low Tech Web</h3>
+                </header>
+                <details>
+                    <summary>Description</summary>
+                    <p>A venir...</p>
+                </details>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>A venir ...</li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Experiments</summary>
+                    <ul>
+                        <li>Simple Dashboard - Create a web page with a spreadsheet and zero code
+                            -
+                            <a target="_blank" href="https://github.com/acailly/simple-dashboard">
+                                source
+                            </a> 
+                        </li>
+                        <li>Automark - Pure JavaScript automation
+                            -
+                            <a target="_blank" href="https://acailly.github.io/automark">
+                                source
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Le Web décentralisé <small>- The Decentralized Web</small></h3>
+                </header>
+                <details>
+                    <summary>Description</summary>
+                    <p>Aujourd’hui l’inquiétude monte devant l’emprise qu’ont certaines entreprises ou gouvernement
+                        sur notre utilisation d’internet.</p>
+                    <p>Face à cette situation, beaucoup de personnes prônent la décentralisation du web un peu à la manière de Mastodon
+                        face à Twitter, néanmoins les concepts nécessaires sont assez éloignés des traditionnelles applications
+                        client-serveur qui restent aujourd’hui majoritaires.</p>
+                    <p>Que faut il pour décentraliser le web ? C’est ce que je vais tenter de vous présenter simplement et avec des exemples,
+                        tout en m’attardant sur certains mécanismes un peu plus techniques (DHT, Merkle-trees, CRDT...) que vous utilisez 
+                        peut être déjà sans le savoir.</p>
+                    <p>Je parlerais également de quelques initiatives qui commencent à faire le buzz et qui pourraient bouleverser nos usages
+                        à l’avenir.</p>
+                </details>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Technozaure Zenika (2017-03-11) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/web-decentralise/web-decentralise.pdf">
+                                slides
+                            </a>
+                        </li>
+                        <li>Touraine Tech (2018-02-23) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/web-decentralise/web-decentralise-tourainetech.pdf">
+                                slides
+                            </a>
+                        </li>
+                        <li>Devoxx Paris (2018-04-19)
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/web-decentralise/web-decentralise-devoxx.pdf">
+                                slides
+                            </a>
+                            -
+                            <a target="_blank" href="https://www.youtube.com/watch?v=rcY5wBNtGNU">
+                                video
+                            </a>
+                        </li>
+                        <li>BreizhCamp (2019-03-20)
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/web-decentralise/web-decentralise-breizhcamp.pdf">
+                                slides
+                            </a>
+                            -
+                            <a target="_blank" href="https://www.youtube.com/watch?v=e_0Go41pU2E">
+                                video
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Experiments</summary>
+                    <ul>
+                        <li>ROTI online and P2P
+                            -
+                            <a target="_blank" href="https://acailly.github.io/roti">
+                                source
+                            </a> 
+                        </li>
+                        <li>Can we know IP of peers sharing a torrent?
+                            -
+                            <a target="_blank" href="https://github.com/acailly/browse-bittorrent-dht">
+                                source
+                            </a> 
+                        </li>
+                        <li>Collaborative editing of a TextArea with Y.js and IPFS
+                            -
+                            <a target="_blank" href="https://acailly.github.io/shared-editing-demo">
+                                source
+                            </a> 
+                        </li>
+                        <li>WebRTC P2P connection without signaling server
+                            -
+                            <a target="_blank" href="https://acailly.github.io/webrtc-serverless-demo">
+                                source
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Scuttlebutt - Construire un Facebook décentralisé <small>- Build a decentralized Facebook</small></h3>
+                </header>
+                <details>
+                    <summary>Description</summary>
+                    <p>En 2016, le scandale Cambridge Analytica a prouvé que les géants du Net comme Facebook pouvaient avoir une 
+                        influence sur les élections présidentielles d'une grande puissance comme les États-Unis. Pas étonnant que
+                        de plus en plus de personnes les regardent d'un air inquiet, ils sont aussi puissants financièrement que 
+                        certains états et disposent de données à rendre jaloux les services de renseignement.</p>
+                    <p>Seulement voilà, qu'avons-nous comme alternative ? Comment construire un réseau social gratuit comptant 
+                        plusieurs millions d'utilisateurs sans monétiser les données pour payer son coût de fonctionnement ?</p>
+                    <p>Un réseau social de ce type existe, il s'appelle Scuttlebutt et il s'appuie sur les mêmes bases techniques
+                        que la Blockchain sans pour autant consommer l'équivalent de l'Autriche en énergie pour fonctionner ;-)</p>
+                    <p>Nous allons voir comment il fonctionne en repartant de l'essentiel, l'échange de messages, et en ajoutant 
+                        progressivement les fonctionnalités que l'on retrouve dans les réseaux sociaux d'aujourd'hui. Vous serez 
+                        peut être étonnés par sa simplicité et sa ressemblance avec nos interactions dans la vie réelle, ainsi que
+                        par les réponses apportées à certains problèmes comme la suppression des messages ou la liberté d'expression.</p>
+                    <p>Je vous montrerai également comment rejoindre ce réseau et vous présenterai quelques applications disponibles.</p>
+                </details>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Technozaure Zenika (2018-11-16) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/scuttlebutt-facebook-decentralise/scuttlebutt-facebook-decentralise-TZ.pdf">
+                                slides
+                            </a>
+                        </li>
+                        <li>Festival des libertés numériques (2019-01-30) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/scuttlebutt-facebook-decentralise/scuttlebutt-facebook-decentralise-FDLN.pdf">
+                                slides
+                            </a>
+                        </li>
+                        <li>BreizhCamp (2019-03-20)
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/scuttlebutt-facebook-decentralise/scuttlebutt-facebook-decentralise-BREIZHCAMP.pdf">
+                                slides
+                            </a>
+                            -
+                            <a target="_blank" href="https://www.youtube.com/watch?v=ymDi-gwWvrc">
+                                video
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>La planning, la racine du mal ? <small>- Planning, root of evil?</small></h3>
+                </header>
+                <details>
+                    <summary>Description</summary>
+                    <p>Et si cet outil omniprésent, le B.A.BA de la gestion de projet enseignée à l'école, était la conséquence
+                        d'une illusion tout aussi répandue : celle de pouvoir contrôler le futur ?</p>
+                    <p>Et si le simple fait d'utiliser cet outil verrouillait les tentatives de changements, aussi "agiles" soient elles ?</p>
+                    <p>Et si on essayait de comprendre pourquoi pour mieux faire autrement ?</p>
+                    <p>PS : ce talk sera 100% subjectif et volontairement exagéré ;-)</p>
+                </details>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>SoCraTes Day Rennes (2019-06-14), Agile Tour Rennes (2019-11-22) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/planning/planning.pdf">
+                                slides
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Développer avec l'utilisateur <small>- Develop with user</small></h3>
+                </header>
+                <details>
+                    <summary>Description</summary>
+                    <blockquote>
+                        <p>« On peut être fier de ce qu'ON a développé »</p>
+                    </blockquote>
+                    <p>C'est ce qu'a dit une de nos utilisatrices à la fin de ce projet de 6 mois.</p>
+                    <p>Et cela sans écrire de cahier des charges et avec des utilisateurs distant de 700km !</p>
+                    <p>Nous vous présenterons la façon de travailler que nous avons adopté qui, en plus d'être 
+                        très simple, est 100% compatible avec les principes Agile.</p>
+                    <p>En bonus on vous donnera quelques nouvelles de la deuxième version qui est en cours de développement.</p>
+                </details>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Plénière nationale de la DGD-T/INRIA (2018-05-23) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/developper-avec-utilisateur/developper-avec-utilisateur-inria.pdf">
+                                slides
+                            </a> 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/developper-avec-utilisateur/developper-avec-utilisateur-inria.mp4">
+                                video
+                            </a>
+                        </li>
+                        <li>Agile Rennes (2018-09-19) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/developper-avec-utilisateur/developper-avec-utilisateur-agile-rennes.pdf">
+                                slides
+                            </a>
+                        </li>
+                        <li>Agile Tour Rennes (2018-11-23) 
+                            -
+                            <a target="_blank" href="https://github.com/acailly/acailly.github.io/blob/master/confs/developper-avec-utilisateur/developper-avec-utilisateur-agile-tour-rennes.ppsx?raw=true">
+                                slides
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>JavaScript, GPU et Palet Breton <small>- JavaScript, GPU and [a french game]</small></h3>
+                </header>
+                <details>
+                    <summary>Description</summary>
+                    <p>On est en été, j’ai une bière à la main et une brindille dans l’autre pour essayer de mesurer quel est le palet qui remporte le point.</p>
+                    <p>C’est à ce moment que je me dis qu’à notre époque on doit pouvoir trouver mieux comme instrument de mes... - “T’as bougé le palet !” - 
+                        grrr c’est décidé je vais faire une app.</p>
+                    <p>Alors on y va ! C++, OpenCV, CUDA, SIMD, on sort l’artillerie lourde… sauf que non, on va se la jouer hype et faire de l’analyse d’image
+                        en JavaScript (!) avec l‘aide du GPU (?)</p>
+                    <p>En 15 minutes on va voir comment ca marche et comment c’est tout simple en fait !</p>
+                </details>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Lightning Talks Zenika (2018-15-01) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/javascript-gpu-palet/javascript-gpu-palet-breton.pdf">
+                                slides
+                            </a> 
+                        </li>
+                        <li>BreizhCamp (2018-03-29)
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/javascript-gpu-palet/javascript-gpu-palet-breton-breizhcamp.pdf">
+                                slides
+                            </a> 
+                            -
+                            <a target="_blank" href="https://www.youtube.com/watch?v=vN5vcZpzero">
+                                video
+                            </a>
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Experiments</summary>
+                    <ul>
+                        <li>App for the french game "Palet breton", using gpu.js
+                            -
+                            <a target="_blank" href="https://acailly.github.io/palet">
+                                source
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Connaissez vous le jugement majoritaire ? <small>- Do you know the majority judgment?</small></h3>
+                </header>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Lightning Talks Zenika (2019-03-05) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/jugement-majoritaire/jugement-majoritaire-lightning-talks.pdf">
+                                slides
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Les chatbots, du pourquoi au comment ? <small>- Chatbots, from why to how?</small></h3>
+                </header>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Technozaure Zenika (2017-03-03) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/chatbots/chatbots.pdf">
+                                slides
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+                <details>
+                    <summary>Experiments</summary>
+                    <ul>
+                        <li>BreizhBot, a chatbot for the BreizhCamp 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/breizhbot">
+                                source
+                            </a> 
+                        </li>
+                        <li>Bot - A plugin based CLI
+                            -
+                            <a target="_blank" href="https://github.com/acailly/bot">
+                                source
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Git LFS</h3>
+                </header>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Technozaure Zenika (2017-03-03) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/git-lfs/git-lfs.pdf">
+                                slides
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+            <article>
+                <header>
+                    <h3>Getting things done avec Inbox <small>- Getting things done with Inbox</small></h3>
+                </header>
+                <details>
+                    <summary>Slides & Videos</summary>
+                    <ul>
+                        <li>Lightning Talks Zenika (2017-11-13) 
+                            -
+                            <a target="_blank" href="https://acailly.github.io/confs/getting-things-done-inbox/getting-things-done-inbox.pdf">
+                                slides
+                            </a> 
+                        </li>
+                    </ul>
+                </details>
+            </article>
+        </section>
+    </body>
 </html>
