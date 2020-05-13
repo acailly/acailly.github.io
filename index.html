@@ -16,6 +16,11 @@
             h1,h2,h3{
                 line-height:1.2
             }
+            /* From https://stackoverflow.com/a/52058198 */
+            a[target="_blank"]::after {
+                content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
+                margin: 0 3px 0 5px;
+            }
         </style>
     </head>
     <body>
@@ -79,7 +84,7 @@
                 </header>
                 <details>
                     <summary>Description</summary>
-                    <p>Aujourd’hui l’inquiétude monte devant l’emprise qu’ont certaines entreprises ou gouvernement
+                    <p>Aujourd’hui l’inquiétude monte devant l’emprise qu’ont certaines entreprises ou gouvernements
                         sur notre utilisation d’internet.</p>
                     <p>Face à cette situation, beaucoup de personnes prônent la décentralisation du web un peu à la manière de Mastodon
                         face à Twitter, néanmoins les concepts nécessaires sont assez éloignés des traditionnelles applications
