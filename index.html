@@ -3,8 +3,32 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="Description" content="Pofile web page of Antoine Cailly">
-        <title>Antoine Cailly</title>
+        
+        <!-- Filled with help from https://www.heymeta.com/ -->
+
+        <!-- HTML Meta Tags -->
+        <title>Antoine Cailly's website</title>
+        <meta name="Description" content="Developer at Zenika Rennes">
+
+        <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="Antoine Cailly's website">
+        <meta itemprop="description" content="Developer at Zenika Rennes">
+        <meta itemprop="image" content="https://acailly.github.io/profile.png">
+
+
+        <!-- Facebook Meta Tags -->
+        <meta property="og:title" content="Antoine Cailly's website">
+        <meta property="og:description" content="Developer at Zenika Rennes">
+        <meta property="og:image" content="https://acailly.github.io/profile.png">
+        <meta property="og:url" content="https://acailly.github.io">
+        <meta property="og:type" content="website">
+
+        <!-- Twitter Meta Tags -->
+        <meta name="twitter:title" content="Antoine Cailly's website">        
+        <meta name="twitter:description" content=" Developer at Zenika Rennes">        
+        <meta name="twitter:image" content=" https://acailly.github.io/profile.png">        
+        <meta name="twitter:card" content="summary_large_image">
+        
         <style type="text/css">
             body{
                 margin:40px auto;
@@ -22,21 +46,36 @@
                 content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
                 margin: 0 3px 0 5px;
             }
+            nav ul {
+                list-style-type: none;
+                padding-left: 0;
+            }
+            nav ul li {
+                display: inline-block;
+                padding-right: 10px;
+            }
         </style>
     </head>
     <body>
         <header>
             <h1>Antoine Cailly</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#about-this-website">About this website</a></li>
+                    <li><a href="#talks">Talks</a></li>
+                </ul>
+            </nav>
             <!-- This image have been dithered with https://gazs.github.io/canvas-atkinson-dither/ -->
-            <img alt="Profile Image" src="profile.png">
+            <img alt="Profile image of Antoine Cailly" src="profile.png">
         </header>
 
         <section>
             <header>
-                <h2>About Me</h2>
+                <h2 id="about-me">About Me</h2>
             </header>
             <p>Developer at <a target="_blank" rel="noreferrer" href="https://www.zenika.com/">Zenika Rennes</a></p>
-            <p>Curious about alternative ways of building stuff and working together</p>
+            <p>I am curious about alternative ways of building stuff and working together.</p>
             <p>Github: <a target="_blank" rel="noreferrer" href="https://github.com/acailly">acailly</a></p>
             <p>Twitter: <a target="_blank" rel="noreferrer" href="https://twitter.com/AntoineCailly">@AntoineCailly</a></p>
             <p>Scuttlebutt: 
@@ -45,22 +84,44 @@
                 </a>
             </p>
             <p>SpeakerDeck: <a target="_blank" rel="noreferrer" href="https://speakerdeck.com/acailly">acailly</a></p>
-            <p><i>This website is a 
+        </section>
+        <section>
+            <header>
+                <h2 id="about-this-website">About this website</h2>
+            </header>
+            <p>This website is a 
                 <a target="_blank" rel="noreferrer" href="https://motherfuckingwebsite.com/">mother fucking website</a>,
                 <a target="_blank" rel="noreferrer" href="http://john.ankarstrom.se/html/">written in HTML</a> 
                 with a 
                 <a target="_blank" rel="noreferrer" href="https://brutalist-web.design/">brutalist web design</a> 
                 and 
                 <a target="_blank" rel="noreferrer" href="https://jeffhuang.com/designed_to_last/">designed to last</a>
-            </i></p>
-            <p><i>It is graded A on 
-                <a target="_blank" rel="noreferrer" href="http://www.ecoindex.fr/">Eco Index</a>,
-                has 100% score on
-                <a target="_blank" rel="noreferrer" href="https://web.dev/measure/">Lighthouse audit</a>
-            </i></p>
+            </p>
+            <details>
+                <summary>
+                    More about that...
+                </summary>
+                <p>It is the kind of website I would like to see more often</p>
+                <p>Because it is very lightweigth, that is why it is graded A on 
+                    <a target="_blank" rel="noreferrer" href="http://www.ecoindex.fr/">Eco Index</a>,
+                    has 100% score on
+                    <a target="_blank" rel="noreferrer" href="https://web.dev/measure/">Lighthouse audit</a>
+                </p>
+                <p>Because it uses semantic HTML, that means that nearly every browser can display it correctly, including text based browsers like 
+                    <a target="_blank" rel="noreferrer" href="http://links.twibright.com/">Links</a>,
+                    and screen readers like 
+                    <a target="_blank" rel="noreferrer" href="https://github.com/nvaccess/nvda">NVDA</a>,
+                </p>
+                <p>Because its source is not minified, that means that anyone with basic knowledge of HTML and CSS
+                    can understand how it's done and do the same. 
+                    See <a target="_blank" rel="noreferrer" href="https://openclassrooms.com/">OpenClassRooms</a> 
+                    or <a target="_blank" rel="noreferrer" href="https://www.khanacademy.org/">Khan Academy</a>
+                    for free ressources.
+                </p>
+            </details>
         </section>
         <section>
-            <h2>Talks</h2>
+            <h2 id="talks">Talks</h2>
             <article>
                 <header>
                     <h3>Le Low Tech Web</h3>
@@ -104,7 +165,7 @@
                     <p>Face à cette situation, beaucoup de personnes prônent la décentralisation du web un peu à la manière de Mastodon
                         face à Twitter, néanmoins les concepts nécessaires sont assez éloignés des traditionnelles applications
                         client-serveur qui restent aujourd’hui majoritaires.</p>
-                    <p>Que faut il pour décentraliser le web ? C’est ce que je vais tenter de vous présenter simplement et avec des exemples,
+                    <p>Que faut-il pour décentraliser le web ? C’est ce que je vais tenter de vous présenter simplement et avec des exemples,
                         tout en m’attardant sur certains mécanismes un peu plus techniques (DHT, Merkle-trees, CRDT...) que vous utilisez 
                         peut être déjà sans le savoir.</p>
                     <p>Je parlerais également de quelques initiatives qui commencent à faire le buzz et qui pourraient bouleverser nos usages
