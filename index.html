@@ -64,6 +64,9 @@
             details summary:hover {
                 outline-style: auto;
             }
+            .dithered-img {
+                filter: blur(1px);
+            }
         </style>
     </head>
     <body>
@@ -78,7 +81,7 @@
                 </ul>
             </nav>
             <!-- This image have been dithered with https://gazs.github.io/canvas-atkinson-dither/ -->
-            <img alt="Profile image of Antoine Cailly" src="profile.png">
+            <img alt="Profile image of Antoine Cailly" src="profile.png" class="dithered-img">
         </header>
 
         <section>
