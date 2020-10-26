@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Governing the commons</title>
+    <style>*{margin:0;padding:0;box-sizing:border-box}#slide{display:none}.slide{white-space:nowrap}.slide-content{align-self:center}@media screen{body{position:absolute;top:50%;left:50%}.slide-4x3{width:1024px;height:768px;margin:-384px 0 0 -512px}.slide-16x9{width:1024px;height:576px;margin:-288px 0 0 -512px}.slide-16x10{width:1024px;height:640px;margin:-320px 0 0 -512px}.slide{position:absolute;width:100%;height:100%;display:flex;justify-content:center;overflow:hidden}}@media print{body{transform:none!important}h1{font-size:1.8rem;line-height:1.5;letter-spacing:-.05rem;font-weight:300}.slide-root{width:100%;display:flex;flex-wrap:wrap;align-items:stretch}.slide-content{transform:none!important}.slide{display:flex;justify-content:center;flex:1;padding:.5rem;margin:.5rem .5rem 4rem .5rem;border:1px solid rgba(0,0,0,0.2);visibility:visible!important}}</style>
+    <script>function trimIndent(e){var t=(e.match(INDENT_RE)||[""])[0].length;if(t>0){var n=e.substring(0,t);return e.replace(new RegExp(n,"g"),"")}}function renderSlide(e,t,n){var i=t.split("\n"),r=-1,o=document.createElement("div"),d=document.createElement("div"),s="";o.className="slide slide-"+n,d.className="slide-content";for(var l=0;l<i.length;l++){var a=i[l];if(a.startsWith("#"))s=s+"<h1>"+a.substring(1)+"</h1>";else if(a.startsWith("  ")||a.startsWith("    "))s=s+"<pre>"+a.replace(/^(  )|\t/,"")+"</pre>";else{a.startsWith(".")&&(a=a.substring(1));for(var c=0;c<a.length;c++){var h=a.charAt(c);"*"==h?-1==r?(s+="<strong>",r=s.length):(r!=s.length?s+="</strong>":s=s.substring(0,s.length-8)+"*",r=-1):s+=h}s+="<br/>"}}d.innerHTML=s,o.appendChild(d),e.appendChild(o),o.style.visibility="hidden"}function render(e){var t=document.createElement("div");t.className="slide-root",document.body.appendChild(t),e=trimIndent(e);for(var n=e.split(/[\s+]\n/gm),i=0;i<n.length;i++){var r=n[i].trim();renderSlide(t,r,i)}return t}function resize(){var e=window.innerWidth,t=window.innerHeight,n=document.body.offsetWidth,i=document.body.offsetHeight,r=n/i>e/t?e/n:t/i;document.body.style.transform="scale("+r+")"}function goTo(e){currentSlide=e,window.location.hash=e;for(var t=document.querySelectorAll(".slide"),n=0;n<t.length;n++){var i=t[n],r=i.children[0],o=.8*i.offsetWidth/r.offsetWidth,d=.8*i.offsetHeight/r.offsetHeight;r.style.transform="scale("+Math.min(o,d)+")",n==currentSlide?i.style.visibility="":i.style.visibility="hidden"}}function next(){goTo(Math.min(currentSlide+1,document.querySelectorAll(".slide").length-1))}function prev(){goTo(Math.max(currentSlide-1,0))}var INDENT_RE=/^(?:( )+|\t+)/,currentSlide=-1;window.onload=function(){resize(),render(document.getElementById("slide").innerHTML),goTo(window.location.hash.substring(1)||0),window.onclick=next,window.onresize=resize,window.onkeydown=function(e){39==e.keyCode?next():37==e.keyCode&&prev()}};</script>
+    <style media="screen">
+      @import url(https://fonts.googleapis.com/css?family=Lato:400,700&subset=latin,latin-ext);
+      @import url(https://fonts.googleapis.com/css?family=Oswald:400,700);
+      @import url(https://fonts.googleapis.com/css?family=Inconsolata);
+      /* Customize theme: change body, h1, strong, pre or .slide class */
+      body {
+        font-family: 'Lato', sans-serif;
+        background-color: #edd400;
+        color: #453029;
+        line-height: 1.54;
+      }
+      .slide h1 {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 400;
+        font-size: 2.6rem;
+      }
+      .slide pre {
+        font-family: 'Inconsolata';
+        font-size: 0.6rem;
+        line-height: 1.1;
+      }
+    </style>
+  </head>
+  <body class="slide-16x9">
+    <pre id="slide">
+      # Governing the commons
+      Résumé subjectif
+        Pechakucha & Takahashi style !
+      
+      # POURQUOI ?
+      Une autre voie possible ?
+          
+      # Tragédie
+      ...des biens communs,
+      dilemme du prisonnier
+      .
+      Surexploitation *INEVITABLE*
+      
+      # Hypothèses
+      - Participants *court termistes*
+      - Faible *confiance* mutuelle
+      - Actions *indépendantes*
+      - Faibles capacités de *communiquer*
+      
+      # REGULATION !
+      par l'*Etat*
+      par la *Loi du Marché*
+      .
+      et l'autogouvernance ? #anarchie 🏴
+      
+      # Elinor Ostrom
+      Prix Nobel d'économie, 2009
+      1ère femme 💪
+      
+      # Governing the commons
+      Nombreux exemples de terrain 🤓
+      Nombre de participants relativement *faible* (- de 10000) et *limité*
+      .
+      ✅ 8 principes :
+      - solide si 8
+      - fragile si moins
+      - échec si peu
+      
+      # Les 8 principes
+        légèrement reformulés
+      1/ Des *limites* clairement définies
+      2/ Des règles *adaptées au contexte*
+      3/ Un dispositif de *choix collectif*
+      4/ Un mécanisme de *surveillance*
+      5/ Des sanctions *graduelles*
+      6/ Un mécanisme de *résolution de conflits*
+      7/ Une *autonomie* non remise en cause
+      8/ Des systèmes *imbriqués*
+      
+      # la SURVEILLANCE pour informer ?!
+      Contrat *conditionnel* :
+      📕 "Je m'engage a me conformer, en toute circonstance a l'exception des situations d'urgence,
+      aux règles que nous avons mis en place si les autres participants prennent
+      un engagement similaire et agissent en conséquence."
+      .
+      Surveillance ↗ conformité *perçue* ↗ 🤯
+      
+      # Trucs & Astuces
+      - Le surveillant a un intérêt à être efficace
+      - Récompenser la performance (% de l'amende)
+      - Il est destituable 🚪
+      - Faibles coût d'enregistrement et de communication
+      - Règles non ambigües, faciles à mesurer
+      (période de chasse, type de materiel *vs* quotas)
+      
+      # SANCTIONS GRADUELLES
+      ...comme vecteur de confiance ?! 🤯
+      .
+      💭 "Le système fonctionne aussi pour les autres"
+      .
+      Sinon :
+      - sentiment de trahison, d'injustice => refus
+      - ↘ conformité perçue ↗ infractions (🙃)
+      
+      
+      # RESOLUTION DE CONFLIT
+      ... parce que les règles ne suffisent pas
+      .
+      Accès *rapide* à des arènes *bon marché*
+      - Conflits
+      - Cas de force majeure
+      - Détournement de la règle 😏
+      .
+      ➕ rend visible la surveillance
+      ↗ conformité perçue
+      .
+      ➕ rend visible les infractions / humiliation publique
+      ↘ coût surveillance
+      
+      # CHOIX COLLECTIF
+      Changer ou non le status quo ?
+      .
+      📕 "Les informations du monde externe ne sont pas des faits existants quelque part,
+      elles doivent être *recherchées, organisées et analysées*"
+      .
+      normes partagées, autres opportunités, bénéfices escomptés, coûts de transformation,
+      coûts de surveillance, coûts d'application...
+      .
+      ⌚ Ca peut prendre des années !
+        16 ans pour un accord avec 99 participants
+      
+      # Et l'humain !
+      *PERTES* POTENTIELLES > gains potentiels
+      .
+      EFFETS *IMMEDIATS* > effets dans le futur
+      .
+      EVENEMENTS *RECENTS* > événements passés
+      📕 "Difficile de changer après une bonne récolte"
+      .
+      REGLES *FAMILIERES* > règles inconnues
+      📕 Importance des exemples de réussite dans des situations similaires
+      .
+      Comportements *stratégiques*
+      .
+      😨 c'est complexe !
+      
+      # L'intendance suivra
+      (💬 citation attribué à de Gaulle)
+        ne figure pas dans le livre
+      .
+      Dans les modèles actuels :
+      - les participants sont capables d'une maximisation à court terme mais *pas à long terme*
+      - les participants dans un piège dont *ils ne peuvent sortir seuls*
+      - les institutions des participants sont *inneficaces* car...
+      - ... on ne tient pas compte des coûts de surveillance, d'application et d'informations 😐
+      - les modèles de référence sont des modèles de Marché ou d'Etat *idéalisés*
+      .
+      📕 "ont l'effet pervers de préconiser une centralisation accrue de l'autorité politique"
+      
+      📕 "L'introduction rapide d'une technologie
+      'plus efficace' par une autorité externe peut
+      *déclencher* la 'tragédie des biens communs'
+      que ces mêmes fonctionnaires *s'attendent
+      à voir surgir* s'ils ne régulent pas." 🙃
+      
+      # Ma pêcherie au Canada
+      🐟 Pêcheries locales auto-organisées
+      .
+      Selon le gouvernement : accès libre
+      *Il faut réguler !!!*
+      Attribution de licences 🎫
+      .
+      Méfiance vis à vis de ce régulateur externe
+      *Et si demain ils interdisent tout ?*
+      => Achat de licences non utilisées (défensif)
+      => Pêche "illégale" hors licence
+      .
+      📺 Comment serait-ce présenté dans les médias ?
+      
+      
+      # LA CORRUPTION
+      ... comme outil d'autonomie 🤯
+      .
+      Autonomie ↗ coût surveillance ↘
+      Système centralisé "même règle partout" : coût surveillance +++ 🙃
+      .
+      📕 "Lorsque les participants ont en face d'eux des fonctionnaires disposant
+      à eux seuls du pouvoir de leur permettre ou non de changer les règles,
+      les coûts de transformation peuvent être difficiles à estimer.
+      On peut donc s'attendre à un *moindre degré d'innovation et de changement*"
+      .
+      Une solution, la corruption 😄
+      Autre piste, s'éloigner de l'autorité centrale 🚀
+      
+      
+      # AIDE EXTERIEURE
+      Utile quand elle favorise l'*autonomie*
+      .
+      - aide à la *transmission d'information*
+      - aide au *financement*
+      - fournit des processus de *justice* équitables
+      - apporte une *légitimité*
+      - ...
+      .
+        #CoachVsBoss ?
+      
+      # 6 FACTEURS DE CHANGEMENT
+      🔽 par ordre d'importance
+      1/ "On subira des *préjudices si on ne change pas* les règles"
+      2/ "On sera *impactés de manière similaire* par les règles proposées"
+      3/ "On veut que le système *perdure*"
+      4/ *Faibles coûts* d'information, de transformation et d'application
+      5/ *Capital social initial* : réciprocité et confiance
+      6/ Groupe relativement *petit et stable*
+      
+      # MERCI
+      
+    </pre>
+  </body>
+</html>
+
