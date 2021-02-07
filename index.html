@@ -9,6 +9,12 @@
         <!-- HTML Meta Tags -->
         <title>Antoine Cailly's website</title>
         <meta name="Description" content="Developer at Zenika Rennes">
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="220x201"
+          href="profile.png"
+        />
 
         <!-- Google / Search Engine Tags -->
         <meta itemprop="name" content="Antoine Cailly's website">
@@ -50,6 +56,9 @@
                 content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAQElEQVR42qXKwQkAIAxDUUdxtO6/RBQkQZvSi8I/pL4BoGw/XPkh4XigPmsUgh0626AjRsgxHTkUThsG2T/sIlzdTsp52kSS1wAAAABJRU5ErkJggg==);
                 margin: 0 3px 0 5px;
             }
+            ul li {
+                padding-bottom: 5px;
+            }
             nav ul {
                 list-style-type: none;
                 padding-left: 0;
@@ -60,6 +69,10 @@
             }
             details summary {
                 cursor: pointer;
+            }
+            details summary::after {
+                content: ' (click me to expand)';
+                color: #777;
             }
             details summary:hover {
                 outline-style: auto;
@@ -81,7 +94,7 @@
                 </ul>
             </nav>
             <!-- This image have been dithered with https://gazs.github.io/canvas-atkinson-dither/ -->
-            <img alt="Profile image of Antoine Cailly" src="profile.png" class="dithered-img">
+            <img alt="Profile image of Antoine Cailly" width="220" height="201" src="profile.png" class="dithered-img">
         </header>
 
         <section>
@@ -131,7 +144,7 @@
                 <p>It is the kind of website I would like to see more often.</p>
                 <p>Because it is very lightweigth, that is why it is graded A on 
                     <a target="_blank" rel="noreferrer" href="http://www.ecoindex.fr/">Eco Index</a>,
-                    has 100% score on
+                    has an almost perfect score on
                     <a target="_blank" rel="noreferrer" href="https://web.dev/measure/">Lighthouse audit</a>.
                 </p>
                 <p>Because it uses semantic HTML, that means that nearly every browser can display it correctly, including text based browsers like 
@@ -422,6 +435,10 @@
                             -
                             <a target="_blank" rel="noreferrer" href="https://acailly.github.io/confs/developper-avec-utilisateur/developper-avec-utilisateur-inria.mp4">
                                 video
+                            </a>
+                            -
+                            <a target="_blank" rel="noreferrer" href="https://acailly.github.io/confs/developper-avec-utilisateur/developper-avec-utilisateur-inria-shrinked.mp4">
+                                video (low quality)
                             </a>
                         </li>
                         <li>Agile Rennes (2018-09-19) 
