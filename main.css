@@ -1,0 +1,433 @@
+/* From https://matthew.science/ */
+
+/* TODO ACY faire le tri dans ce qui est utile ou pas */
+
+:root {
+  /* From https://www.radix-ui.com/colors/docs/palette-composition/scales */
+  --blue-1: #fbfdff;
+  --blue-2: #f4faff;
+  --blue-3: #e6f4fe;
+  --blue-4: #d5efff;
+  --blue-5: #c2e5ff;
+  --blue-6: #acd8fc;
+  --blue-7: #8ec8f6;
+  --blue-8: #5eb1ef;
+  --blue-9: #0090ff;
+  --blue-10: #0588f0;
+  --blue-11: #0d74ce;
+  --blue-12: #113264;
+
+  /* From https://www.radix-ui.com/colors/docs/palette-composition/scales */
+  --mauve-1: #fdfcfd;
+  --mauve-2: #faf9fb;
+  --mauve-3: #f2eff3;
+  --mauve-4: #eae7ec;
+  --mauve-5: #e3dfe6;
+  --mauve-6: #dbd8e0;
+  --mauve-7: #d0cdd7;
+  --mauve-8: #bcbac7;
+  --mauve-9: #8e8c99;
+  --mauve-10: #84828e;
+  --mauve-11: #65636d;
+  --mauve-12: #211f26;
+
+  /* From https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale */
+  /* Backgrounds */
+  --primary-app-background: var(--blue-1);
+  --primary-subtle-background: var(--blue-2);
+  /* Component backgrounds */
+  --primary-ui-element-background: var(--blue-3);
+  --primary-hovered-ui-element-background: var(--blue-4);
+  --primary-active-or-selected-ui-element-background: var(--blue-5);
+  /* Borders */
+  --primary-subtle-borders-and-separators: var(--blue-6);
+  --primary-ui-element-border-and-focus-ring: var(--blue-7);
+  --primary-hovered-ui-element-border: var(--blue-8);
+  /* Solid backgrounds */
+  --primary-solid-backgrounds: var(--blue-9);
+  --primary-hovered-solid-backgrounds: var(--blue-10);
+  /* Text */
+  --primary-low-contrast-text: var(--blue-11);
+  --primary-high-contrast-text: var(--blue-12);
+
+  /* From https://www.radix-ui.com/colors/docs/palette-composition/understanding-the-scale */
+  /* Backgrounds */
+  --gray-app-background: var(--mauve-1);
+  --gray-subtle-background: var(--mauve-2);
+  /* Component backgrounds */
+  --gray-ui-element-background: var(--mauve-3);
+  --gray-hovered-ui-element-background: var(--mauve-4);
+  --gray-active-or-selected-ui-element-background: var(--mauve-5);
+  /* Borders */
+  --gray-subtle-borders-and-separators: var(--mauve-6);
+  --gray-ui-element-border-and-focus-ring: var(--mauve-7);
+  --gray-hovered-ui-element-border: var(--mauve-8);
+  /* Solid backgrounds */
+  --gray-solid-backgrounds: var(--mauve-9);
+  --gray-hovered-solid-backgrounds: var(--mauve-10);
+  /* Text */
+  --gray-low-contrast-text: var(--mauve-11);
+  --gray-high-contrast-text: var(--mauve-12);
+}
+
+html,
+button {
+  color: #232333;
+  font-family: "Roboto Mono", monospace;
+  font-size: 15px;
+  line-height: 1.6em;
+}
+
+body {
+  display: block;
+  animation: intro 0.3s both;
+  animation-delay: 0.15s;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 0 1ch;
+  word-wrap: break-word;
+  color: var(--gray-high-contrast-text);
+  background-color: var(--gray-app-background);
+}
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+::selection {
+  background: var(--primary-hovered-solid-backgrounds);
+  color: #fff;
+}
+
+p {
+  line-height: 1.5;
+}
+
+hr {
+  border: 0;
+  border-top: 3px dotted var(--primary-solid-backgrounds);
+  margin: 1em 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--primary-solid-backgrounds);
+  color: #737373;
+  margin: 0;
+  padding-left: 1em;
+}
+
+a {
+  border-bottom: 3px solid var(--primary-solid-backgrounds);
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: var(--primary-hovered-solid-backgrounds);
+  color: #fff;
+}
+
+a[target="_blank"]::after {
+  content: '↗';
+  color: --primary-solid-backgrounds;
+  margin: 0 3px 0 5px;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0px;
+  border-bottom: 3px solid var(--gray-solid-backgrounds);
+}
+
+button:hover {
+  background-color: var(--gray-hovered-solid-backgrounds);
+  color: #fff;
+}
+
+*:has(+ button) {
+  margin-right: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 2ch;
+  margin-bottom: 12px;
+  margin-top: 10px;
+}
+
+ul li {
+  text-indent: -2ch;
+  margin-bottom: 10px;
+}
+
+ul > li::before {
+  content: "• ";
+  font-weight: bold;
+}
+
+img {
+  border: 3px solid #ececec;
+  max-width: 100%;
+}
+
+figure {
+  box-sizing: border-box;
+  display: inline-block;
+  margin: 0;
+  max-width: 100%;
+}
+
+figure img {
+  max-height: 500px;
+}
+
+@media screen and (min-width: 600px) {
+  figure {
+    padding: 0 40px;
+  }
+}
+
+figure h4 {
+  font-size: 1rem;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+figure h4::before {
+  content: "↳ ";
+}
+
+code {
+  background-color: #f1f1f1;
+  padding: 0.1em 0.2em;
+}
+
+pre {
+  background-color: #ececec;
+  line-height: 1.4;
+  overflow-x: auto;
+  padding: 1em;
+}
+
+pre code {
+  background-color: transparent;
+  color: inherit;
+  font-size: 100%;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1em 0;
+  font-size: 1.5rem;
+}
+
+header nav {
+  font-size: 1rem;
+}
+
+header nav :not(:first-child) {
+  margin-left: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.2rem;
+  margin-top: 2em;
+}
+
+summary h1,
+summary h2,
+summary h3,
+summary h4,
+summary h5,
+summary h6 {
+  margin-top: unset;
+  display: inline-block;
+}
+
+details:has(
+    summary h1,
+    summary h2,
+    summary h3,
+    summary h4,
+    summary h5,
+    summary h6
+  ) {
+  margin-top: 2em;
+}
+
+h1::before {
+  color: var(--primary-solid-backgrounds);
+  content: "# ";
+}
+
+h2::before {
+  color: var(--primary-solid-backgrounds);
+  content: "## ";
+}
+
+h3::before {
+  color: var(--primary-solid-backgrounds);
+  content: "### ";
+}
+
+h4::before {
+  color: var(--primary-solid-backgrounds);
+  content: "#### ";
+}
+
+h5::before {
+  color: var(--primary-solid-backgrounds);
+  content: "##### ";
+}
+
+h6::before {
+  color: var(--primary-solid-backgrounds);
+  content: "###### ";
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  border-top: 0.4rem dotted var(--primary-solid-backgrounds);
+  padding: 2rem 0rem;
+  margin-top: 2rem;
+}
+
+#main_title {
+  margin-bottom: 10px;
+}
+
+time {
+  color: grey;
+}
+
+svg {
+  max-height: 15px;
+}
+
+pre {
+  font-family: "Roboto Mono", monospace;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code[class*="language-"] {
+  -webkit-overflow-scrolling: touch;
+}
+
+pre code[class*="language-"]::before {
+  background: black;
+  border-radius: 0 0 0.25rem 0.25rem;
+  color: white;
+  font-size: 12px;
+  letter-spacing: 0.025rem;
+  padding: 0.1rem 0.5rem;
+  position: absolute;
+  right: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  top: 0;
+}
+
+pre code[class="language-javaScript"]::before,
+pre code[class="language-js"]::before {
+  content: "js";
+  background: #f7df1e;
+  color: black;
+}
+
+pre code[class*="language-yml"]::before,
+pre code[class*="language-yaml"]::before {
+  content: "yaml";
+  background: #f71e6a;
+  color: white;
+}
+
+pre code[class*="language-shell"]::before,
+pre code[class*="language-bash"]::before,
+pre code[class*="language-sh"]::before {
+  content: "shell";
+  background: green;
+  color: white;
+}
+
+pre code[class*="language-json"]::before {
+  content: "json";
+  background: dodgerblue;
+  color: #000000;
+}
+
+pre code[class*="language-python"]::before,
+pre code[class*="language-py"]::before {
+  content: "py";
+  background: blue;
+  color: yellow;
+}
+
+pre code[class*="language-css"]::before {
+  content: "css";
+  background: cyan;
+  color: black;
+}
+
+pre code[class*="language-go"]::before {
+  content: "Go";
+  background: cyan;
+  color: royalblue;
+}
+
+pre code[class*="language-md"]::before,
+pre code[class*="language-md"]::before {
+  content: "Markdown";
+  background: royalblue;
+  color: whitesmoke;
+}
+
+pre code[class*="language-rust"]::before,
+pre code[class*="language-rs"]::before {
+  content: "rust";
+  background: #fff8f6;
+  color: #ff4647;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table th {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+  font-size: large;
+}
+
+table td {
+  padding: 6px 13px;
+  border: 1px solid #dfe2e5;
+}
+
+summary {
+  cursor: pointer;
+}

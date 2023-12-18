@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Filled with help from https://www.heymeta.com/ -->
+
+    <!-- HTML Meta Tags -->
+    <title>Antoine Cailly</title>
+    <meta name="Description" content="Développeur à Zenika Rennes" />
+    <link rel="icon" type="image/png" sizes="220x201" href="profile.png" />
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Antoine Cailly" />
+    <meta itemprop="description" content="Développeur à Zenika Rennes" />
+    <meta itemprop="image" content="https://acailly.github.io/profile.png" />
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Antoine Cailly" />
+    <meta property="og:description" content="Développeur à Zenika Rennes" />
+    <meta property="og:image" content="https://acailly.github.io/profile.png" />
+    <meta property="og:image:width" content="220" />
+    <meta property="og:image:height" content="201" />
+    <meta property="og:url" content="https://acailly.github.io" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content="Antoine Cailly" />
+    <meta name="twitter:description" content=" Développeur à Zenika Rennes" />
+    <meta
+      name="twitter:image"
+      content=" https://acailly.github.io/profile.png"
+    />
+    <meta
+      name="twitter:image:alt"
+      content="Image de profile d'Antoine Cailly"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- IndieAuth -->
+    <!-- https://hacks.mozilla.org/2018/10/dweb-identity-for-the-decentralized-web-with-indieauth/ -->
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
+
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <script src="html-include.js?url=header-show"></script>
+
+    <section>
+      <header>
+        <h1>Web décentralisé / P2P</h1>
+      </header>
+
+      <h2>Fonctionnement du web décentralisé P2P</h2>
+      <p>
+        Présentation des mécanismes mis en oeuvre dans un réseau décentralisé
+        P2P
+      </p>
+      <details>
+        <summary>Cliquer ici pour en savoir plus</summary>
+        <p>
+          Aujourd’hui l’inquiétude monte devant l’emprise qu’ont certaines
+          entreprises ou gouvernements sur notre utilisation d’internet.
+        </p>
+        <p>
+          Face à cette situation, beaucoup de personnes prônent la
+          décentralisation du web un peu à la manière de Mastodon face à
+          Twitter, néanmoins les concepts nécessaires sont assez éloignés des
+          traditionnelles applications client-serveur qui restent aujourd’hui
+          majoritaires.
+        </p>
+        <p>
+          Que faut-il pour décentraliser le web ? C’est ce que je vais tenter de
+          vous présenter simplement et avec des exemples, tout en m’attardant
+          sur certains mécanismes un peu plus techniques (DHT, Merkle-trees,
+          CRDT...) que vous utilisez peut être déjà sans le savoir.
+        </p>
+        <p>
+          Je parlerais également de quelques initiatives qui commencent à faire
+          le buzz et qui pourraient bouleverser nos usages à l’avenir.
+        </p>
+      </details>
+      <p>Conférences</p>
+      <ul>
+        <li>
+          Touraine Tech (2018-02-23) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/web-decentralise/web-decentralise-tourainetech.pdf"
+          >
+            slides
+          </a>
+        </li>
+        <li>
+          Devoxx Paris (2018-04-19) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/web-decentralise/web-decentralise-devoxx.pdf"
+          >
+            slides
+          </a>
+          -
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.youtube.com/watch?v=rcY5wBNtGNU"
+          >
+            vidéo
+          </a>
+        </li>
+        <li>
+          BreizhCamp (2019-03-20) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/web-decentralise/web-decentralise-breizhcamp.pdf"
+          >
+            slides
+          </a>
+          -
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.youtube.com/watch?v=e_0Go41pU2E"
+          >
+            vidéo
+          </a>
+        </li>
+        <li>
+          Toulouse JUG (2020-06-04) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/web-decentralise/web-decentralise-toulousejug.pdf"
+          >
+            slides
+          </a>
+          -
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.crowdcast.io/e/soire-web-dcentralis"
+          >
+            vidéo (nécessite de s'enregistrer)
+          </a>
+        </li>
+      </ul>
+      <p>Mini-projets</p>
+      <ul>
+        <li>
+          ROTI (Return On Time Invested) en ligne et P2P :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/roti"
+          >
+            sources
+          </a>
+        </li>
+        <li>
+          Peut on connaitre les IPs partageant un torrent ? :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/roti"
+          >
+            sources
+          </a>
+        </li>
+        <li>
+          Edition collaborative dans une zone de texte avec Y.js et IPFS :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/shared-editing-demo"
+          >
+            sources
+          </a>
+        </li>
+        <li>
+          Connexion WebRTC P2P sans signaling server :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/webrtc-serverless-demo"
+          >
+            sources
+          </a>
+        </li>
+      </ul>
+
+      <h2>Scuttlebutt - Construire un Facebook décentralisé</h2>
+      <p>Présentation d'un réseau social atypique et décentralisé</p>
+      <details>
+        <summary>Cliquer ici pour en savoir plus</summary>
+        <p>
+          En 2016, le scandale Cambridge Analytica a prouvé que les géants du
+          Net comme Facebook pouvaient avoir une influence sur les élections
+          présidentielles d'une grande puissance comme les États-Unis. Pas
+          étonnant que de plus en plus de personnes les regardent d'un air
+          inquiet, ils sont aussi puissants financièrement que certains états et
+          disposent de données à rendre jaloux les services de renseignement.
+        </p>
+        <p>
+          Seulement voilà, qu'avons-nous comme alternative ? Comment construire
+          un réseau social gratuit comptant plusieurs millions d'utilisateurs
+          sans monétiser les données pour payer son coût de fonctionnement ?
+        </p>
+        <p>
+          Un réseau social de ce type existe, il s'appelle Scuttlebutt et il
+          s'appuie sur les mêmes bases techniques que la Blockchain sans pour
+          autant consommer l'équivalent de l'Autriche en énergie pour
+          fonctionner ;-)
+        </p>
+        <p>
+          Nous allons voir comment il fonctionne en repartant de l'essentiel,
+          l'échange de messages, et en ajoutant progressivement les
+          fonctionnalités que l'on retrouve dans les réseaux sociaux
+          d'aujourd'hui. Vous serez peut être étonnés par sa simplicité et sa
+          ressemblance avec nos interactions dans la vie réelle, ainsi que par
+          les réponses apportées à certains problèmes comme la suppression des
+          messages ou la liberté d'expression.
+        </p>
+        <p>
+          Je vous montrerai également comment rejoindre ce réseau et vous
+          présenterai quelques applications disponibles.
+        </p>
+      </details>
+      <p>Conférences</p>
+      <ul>
+        <li>
+          Festival des libertés numériques (2019-01-30) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/scuttlebutt-facebook-decentralise/scuttlebutt-facebook-decentralise-FDLN.pdf"
+          >
+            slides
+          </a>
+        </li>
+        <li>
+          BreizhCamp (2019-03-20) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/scuttlebutt-facebook-decentralise/scuttlebutt-facebook-decentralise-BREIZHCAMP.pdf"
+          >
+            slides
+          </a>
+          -
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.youtube.com/watch?v=ymDi-gwWvrc"
+          >
+            vidéo
+          </a>
+        </li>
+      </ul>
+
+      <h2>L'identité numérique décentralisée</h2>
+      <p>
+        Utilisation des Verifiable Credentials (VC), Verifiable Presentations
+        (VP) et Decentralized Identifiers (DID) pour décentraliser la notion
+        d'identité
+      </p>
+      <p>Conférences</p>
+      <ul>
+        <li>
+          BreizhCamp (2022-07-01) :
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://acailly.github.io/confs/identite-decentralisee/identite-decentralisee-breizhcamp.pdf"
+          >
+            slides
+          </a>
+          -
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.youtube.com/watch?v=K8KcOjfauX4"
+          >
+            vidéo
+          </a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
