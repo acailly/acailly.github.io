@@ -1,127 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/> <!-- Filled with help from https://www.heymeta.com/ -->
+        <!-- HTML Meta Tags -->
+            <title>
+        Antoine Cailly
+        </title> <meta name="Description" content="Développeur à Zenika Rennes"/>
+        <link
+        rel="icon" type="image/png" sizes="220x201" href="profile.png"/> <!-- Google / Search Engine Tags -->
+        <meta itemprop="name" content="Antoine Cailly"/>
+        <meta itemprop="description" content="Développeur à Zenika Rennes"/>
+        <meta
+        itemprop="image" content="https://acailly.github.io/profile.png"/> <!-- Facebook Meta Tags -->
+        <meta property="og:title" content="Antoine Cailly"/>
+        <meta property="og:description" content="Développeur à Zenika Rennes"/>
+        <meta property="og:image" content="https://acailly.github.io/profile.png"/>
+        <meta property="og:image:width" content="220"/>
+        <meta property="og:image:height" content="201"/>
+        <meta property="og:url" content="https://acailly.github.io"/>
+        <meta
+        property="og:type" content="website"/> <!-- Twitter Meta Tags -->
+        <meta name="twitter:title" content="Antoine Cailly"/>
+        <meta name="twitter:description" content=" Développeur à Zenika Rennes"/>
+        <meta name="twitter:image" content=" https://acailly.github.io/profile.png"/>
+        <meta name="twitter:image:alt" content="Image de profile d'Antoine Cailly"/>
+        <meta name="twitter:card" content="summary_large_image"/> <!-- IndieAuth -->
+        <!-- https://hacks.mozilla.org/2018/10/dweb-identity-for-the-decentralized-web-with-indieauth/ --> <link rel="authorization_endpoint" href="https://indieauth.com/auth"/>
+        <link rel="stylesheet" href="./main.css"/>
+    </head>
+    <body>
+        <header>
+            <div class="main" id="main_title">
+                <a href="/">Antoine Cailly</a>
+            </div>
+            <nav>
+                <a href="/">Accueil</a>
+                <a href="/page-web-decentralise">Web décentralisé</a>
+                <a href="/page-sobriete">Sobriété</a>
+                <a href="/page-travailler-ensemble">Travailler ensemble</a>
+                <a href="/page-divers">Divers</a>
+            </nav>
+        </header>
+        <main>
+            <h1>A propos</h1>
+<p><img src="profile.png" alt="Image de profile d'Antoine Cailly" title="Image de profile d'Antoine Cailly">.</p>
+<p>Développeur à <a href="https://www.zenika.com/">Zenika Rennes</a></p>
+<h2>Centres d'intérêt</h2>
+<ul>
+<li><a href="page-web-decentralise">Web décentralisé</a></li>
+<li><a href="page-sobriete">Sobriété et écologie</a></li>
+<li><a href="page-travailler-ensemble">Mieux travailler ensemble</a></li>
+<li><a href="page-divers.html">... et tout ce qui ne rentre pas dans les thèmes précédents</a></li>
+</ul>
+<h2>Réseaux sociaux</h2>
+<ul>
+<li><a href="https://github.com/acailly">Github (acailly)</a></li>
+<li><a href="https://www.linkedin.com/in/antoine-cailly-7381a016/">LinkedIn (Antoine Cailly)</a></li>
+<li><a href="https://twitter.com/AntoineCailly">X / ex-Twitter (@AntoineCailly)</a></li>
+<li><a href="https://bsky.app/profile/antoinecailly.bsky.social">Bluesky (@antoinecailly.bsky.social)</a></li>
+<li><a href="https://speakerdeck.com/acailly">SpeackerDeck (acailly)</a></li>
+</ul>
 
-    <!-- Filled with help from https://www.heymeta.com/ -->
-
-    <!-- HTML Meta Tags -->
-    <title>Antoine Cailly</title>
-    <meta name="Description" content="Développeur à Zenika Rennes" />
-    <link rel="icon" type="image/png" sizes="220x201" href="profile.png" />
-
-    <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="Antoine Cailly" />
-    <meta itemprop="description" content="Développeur à Zenika Rennes" />
-    <meta itemprop="image" content="https://acailly.github.io/profile.png" />
-
-    <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Antoine Cailly" />
-    <meta property="og:description" content="Développeur à Zenika Rennes" />
-    <meta property="og:image" content="https://acailly.github.io/profile.png" />
-    <meta property="og:image:width" content="220" />
-    <meta property="og:image:height" content="201" />
-    <meta property="og:url" content="https://acailly.github.io" />
-    <meta property="og:type" content="website" />
-
-    <!-- Twitter Meta Tags -->
-    <meta name="twitter:title" content="Antoine Cailly" />
-    <meta name="twitter:description" content=" Développeur à Zenika Rennes" />
-    <meta
-      name="twitter:image"
-      content=" https://acailly.github.io/profile.png"
-    />
-    <meta
-      name="twitter:image:alt"
-      content="Image de profile d'Antoine Cailly"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-
-    <!-- IndieAuth -->
-    <!-- https://hacks.mozilla.org/2018/10/dweb-identity-for-the-decentralized-web-with-indieauth/ -->
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
-
-    <link rel="stylesheet" href="./main.css" />
-  </head>
-  <body>
-    <script src="html-include.js?url=header-show"></script>
-
-    <section>
-      <header>
-        <h1>A propos</h1>
-      </header>
-
-      <img
-        alt="Image de profile d'Antoine Cailly"
-        width="220"
-        height="201"
-        src="profile.png"
-        srcset="profile-660w.png 660w"
-        class="dithered-img"
-      />
-      <p>
-        Développeur à
-        <a target="_blank" rel="noreferrer" href="https://www.zenika.com/"
-          >Zenika Rennes.</a
-        >
-      </p>
-      <h2>Centres d'intérêt</h2>
-      <ul>
-        <li><a href="/page-web-decentralise">Web décentralisé / P2P</a></li>
-        <li><a href="/page-sobriete">Sobriété et écologie</a></li>
-        <li>
-          <a href="/page-travailler-ensemble">Mieux travailler ensemble</a>
-        </li>
-        <li>
-          <a href="/page-divers"
-            >... et tout ce qui ne rentre pas dans les thèmes précédents</a
-          >
-        </li>
-      </ul>
-      <h2>Réseaux sociaux</h2>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer me"
-            href="https://github.com/acailly"
-            >Github (acailly)</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer me"
-            href="https://www.linkedin.com/in/antoine-cailly-7381a016/"
-            >LinkedIn (Antoine Cailly)</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer me"
-            href="https://twitter.com/AntoineCailly"
-            >X / ex-Twitter (@AntoineCailly)</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer me"
-            href="https://bsky.app/profile/antoinecailly.bsky.social"
-            >Bluesky (@antoinecailly.bsky.social)</a
-          >
-        </li>
-        <li>
-          <a
-            target="_blank"
-            rel="noreferrer me"
-            href="https://speakerdeck.com/acailly"
-            >SpeackerDeck (acailly)</a
-          >
-        </li>
-      </ul>
-    </section>
-  </body>
+        </main>
+    </body>
 </html>

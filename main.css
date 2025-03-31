@@ -246,8 +246,16 @@ header nav :not(:first-child) {
   margin-left: 1rem;
 }
 
-h1,
-h2,
+h1 {
+  font-size: 2rem;
+  margin-top: 2em;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 2em;
+}
+
 h3,
 h4,
 h5,
