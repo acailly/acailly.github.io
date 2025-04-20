@@ -3,6 +3,7 @@
     "generate": "node main.mjs"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^3.0.0",
+    "markdown-it-link-attributes": "^4.0.1"
   }
 }
